@@ -104,8 +104,12 @@ body {
    overflow-y: auto; /* Enable vertical scrolling */
    overflow-x: hidden; /* Prevent horizontal scrolling */
    font-family:"Dancing Script", serif;
-   font-weight: 900;
+   font-weight: 700;
    text-align: justify;
+}
+
+.bold-name {
+   font-size: 18px;
 }
 
 .letter p {
@@ -126,16 +130,22 @@ body {
    background-color: #888;
 }
 
+.bold {
+   font-weight: 900;
+}
+
 
 /* Close button for the letter */
 .close-button {
-   margin-top: 10px;
+   margin-top: 15px;
    padding: 10px 20px;
-   background-color: red;
+   background-color: rgb(139, 47, 63);
    color: white;
    border: none;
    border-radius: 5px;
    cursor: pointer;
+   display: block;
+   margin: 10px auto 0 auto; /* Center the button horizontally */
 }
 
 /* Overlay when the letter is displayed */
