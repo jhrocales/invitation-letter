@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+   <!-- Background overlay -->
+   <div class="overlay" id="overlay"></div>
+
+   <!-- Envelope -->
+   <div class="envelope">
+      <!-- Red button -->
+      <div class="button" id="button"></div>
+
+      <!-- Letter -->
+      <div class="letter" id="letter">
+         <p>Dear [Your Girlfriend's Name],</p>
+         <p>You are the sunshine in my life, and every moment with you feels magical. Would you join me on a date to make another beautiful memory?</p>
+         <p>Love, [Your Name]</p>
+         <button class="close-button" id="close-button">Close</button>
+      </div>
+   </div>
+
+   <script>
+      // Get elements
+      const button = document.getElementById('button');
+      const letter = document.getElementById('letter');
+      const overlay = document.getElementById('overlay');
+      const closeButton = document.getElementById('close-button');
+
+      // Show the letter on button click
+      button.addEventListener('click', () => {
+         letter.style.display = 'block';
+         overlay.style.display = 'block';
+      });
+
+      // Hide the letter on close button click
+      closeButton.addEventListener('click', () => {
+         letter.style.display = 'none';
+         overlay.style.display = 'none';
+      });
+   </script>
+</body>
+</html>
